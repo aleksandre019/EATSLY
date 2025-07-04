@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 110px;
+}
+
+
+{/*ცალკე გამოყოფილი ზედა ნაწილი , პოზიცია , ფერი , ჩრდილი, ზომა */}
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+{/*ლოგოს განლაგება */}
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+{/*ლოგოს ზომა */}
+.site-logo {
+    height: 130px;
+    width: auto;
+    display: block;
+}
+
+.home-button {
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    padding: 8px 12px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    border: none;
+}
+
+.header-tagline {
+    margin-left: 300px;
+    margin-right: auto;
+    color: goldenrod;
+    font-style: italic;
+}
+
+
+{/*address ღილაკი fake // უბრალო ფოტო*/}
+.address-fkbutton {
+    margin-left: auto;
+    padding: 8px 10px;
+}
+
+
+.address-logo {
+    display: block;
+    height: 35px;
+    width: 30px;
+}
+
+.page-content {
+    padding: 20px;
+    margin-top: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+
+
+.food-categories {
+    padding: 200px;
+}
+
+.food-categories > h2 {
+    color: darkgoldenrod;  {/*"Food delivery in Tbilisi " სახელის ფერის ცვლილება*/}
+}
+
+.category-section {
+    margin-bottom: 30px;
+}
+
+.category-section h3 {
+    color: #4e0505;  {/*კონკრეტული სახელის ფერის ცვლილება*/}
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+{/*home page ზე category card  , განლაგება , ფერი . transition , დაშორება ზომა ,*/}
+.category-card {
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+    transition: transform 0.2s;
+    text-decoration: none;  {/*სახელის დაბლა ხაზის მოშორება*/}
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+{/*category card transition */}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.category-name1{      {/*ამ ტიპის სახელების ყველას ერთი id აქვს*/}
+    font-size: 1.7rem;
+}
+.category-type {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+{/*პროდუქტის შიდა გვერძე , განლაგება ვიზუალი*/}
+.food-items-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    flex-basis: auto;
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+
+
+.food-item-name {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+{/*ყიდვის button , ფერი ზომა ფერის ცვლილება*/}
+.buy-button {
+    background: none;
+    border: none;
+    color: #ed8f4c;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.buy-button:hover {
+    color: #d17537;
+}
+
+
+
+    .buy-button {
+        font-size: 18px;
+    }
+
+
+{/*გადახდის მესიჯი, ფერი ზომა განლაგება ჩვენების დრო */}
+.buy-success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: darkgoldenrod;
+    color: #dfdfdf;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+
+.Alf2 {
+    padding: 20px;
+}
+
+
+
+.restaurant-name {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.restaurant-type {
+    font-size: 1.1em;
+    color: #777;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.restaurant-description {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+}
+
+{/*ყველასთვის ერთი დიზაინია*/}
+.counrtyfrom {
+    font-size: 1.1em;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dscrib {
+    font-size: 1em;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
